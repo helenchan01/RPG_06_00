@@ -6,34 +6,24 @@ public class Protagonist extends Character {
     protected double baseAttack;
 
     public Protagonist( String name ) {
-	this.name = name;
-	hp = 1000;
-	strength = 20;
-	defense = baseDefense;
-	attack = baseAttack;
+    	this.name = name;
+	    hp = 1000;
+    	strength = 20;
+    	defense = baseDefense;
+    	attack = baseAttack;
     }
 
     public String getName() {
-	return name;
-    }
-
-    public void specialize() {
-	defense = baseDefense - 5 ;
-	attack = baseAttack + 2.5;
-    }
-
-    public void normalize() {
-	defense = baseDefense;
-	attack = baseAttack;
+	    return name;
     }
 
     public String toString() {
-	String stats = "name: " + name
-	             + " hp: " + hp
-	             + " strength: " + strength
-	             + " defense: " + defense
-	             + " attack: " + attack;
-	return stats;
+	    String stats = "name: " + name
+	                 + " hp: " + hp
+	                 + " strength: " + strength
+	                 + " defense: " + defense
+	                 + " attack: " + attack;
+	    return stats;
     }
 	
 }
