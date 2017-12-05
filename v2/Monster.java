@@ -1,10 +1,13 @@
 public class Monster extends Character {
 
+    int baseDefense;
+    double baseAttack;
+    
     public Monster() {
 	hp = 1000;
 	strength = (int) ( 20 + Math.random() * 45 );
-	defense = 5;
-	attack = 2.1;
+	defense = baseDefense;
+	attack = baseAttack;
     }
 
     public String toString() {
