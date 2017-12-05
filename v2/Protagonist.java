@@ -28,10 +28,11 @@ public class Protagonist extends Character {
     }
 
     public String toString() {
-	String stats = "hp: " + hp
-	             + "strength: " + strength
-	             + "defense: " + defense
-	             + "attack: " + attack;
+	String stats = "name: " + name
+	             + " hp: " + hp
+	             + " strength: " + strength
+	             + " defense: " + defense
+	             + " attack: " + attack;
 	return stats;
     }
 	
