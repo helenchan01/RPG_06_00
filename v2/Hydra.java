@@ -6,4 +6,5 @@ public class Hydra extends Monster {
     public Hydra() {
 	super();
     }
+    //
 }
