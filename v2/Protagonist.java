@@ -2,8 +2,8 @@ public class Protagonist extends Character {
 
     private String name;
 
-    private int baseDefense = 10;
-    private double baseAttack = 3.5;
+    protected int baseDefense;
+    protected double baseAttack;
 
     public Protagonist( String name ) {
 	this.name = name;
