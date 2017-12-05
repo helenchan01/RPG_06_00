@@ -2,15 +2,15 @@ public class Protagonist extends Character {
 
     private String name;
 
-    private int defaultDefense = 10;
-    private double defaultAttack = 3.5;
+    private int baseDefense = 10;
+    private double baseAttack = 3.5;
 
     public Protagonist( String name ) {
 	this.name = name;
 	hp = 1000;
 	strength = 20;
-	defense = defaultDefense;
-	attack = defaultAttack;
+	defense = baseDefense;
+	attack = baseAttack;
     }
 
     public String getName() {
@@ -18,14 +18,23 @@ public class Protagonist extends Character {
     }
 
     public void specialize() {
-	defense = defaultDefense - 5 ;
-	attack = defaultAttack + 2.5;
+	defense = baseDefense - 5 ;
+	attack = baseAttack + 2.5;
     }
 
     public void normalize() {
-	defense = defaultDefense;
-	attack = defaultAttack;
+	defense = baseDefense;
+	attack = baseAttack;
     }
+
+    public String toString() {
+	String stats = "hp: " + hp
+	             + "strength: " + strength
+	             + "defense: " + defense
+	             + "attack: " + attack;
+	return stats;
+    }
+	
 }
 
     
