@@ -1,7 +1,7 @@
 public class Monster extends Character {
 
-    int baseDefense;
-    double baseAttack;
+    private int baseDefense;
+    private double baseAttack;
     
     public Monster() {
 	hp = 1000;
