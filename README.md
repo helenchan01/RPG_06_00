@@ -1,11 +1,11 @@
 # RPG_period06_team00
 _Characters_:
 * Rogue
-  * High defense, lower attack
+  * High defense value, lower attack value
 * Mage
-  * High attack, lower defense
+  * High attack value, lower defense value
 * Warrior
-  * Medium attack, medium defence
+  * Medium attack value, medium defense value
 
 _Monsters_:
 * Hydra
