@@ -1,9 +1,13 @@
 public class Undead extends Monster {
 
-    baseDefense = 12;
-    baseAttack = 1.5;
+    private int baseDefense = 12;
+    private double baseAttack = 1.5;
 
     public Undead() {
-	super();
+	    super();
+    }
+
+    public void specialize() {
+
     }
 }
