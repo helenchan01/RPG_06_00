@@ -72,9 +72,21 @@ public class YoRPG
 	    name = in.readLine();
     } catch ( IOException e ) { }
 
-    //instantiate the player's character
-    pat = new Protagonist( name );
+    int charType = 1;
+    
+    try {
+	System.out.println( "\nChoose your character type:" );
+	System.out.println( "\t1: Warrior.\n\t2: Mage.\n\t3: Rogue." );
+	charType = Integer.parseInt( in.readLine() );
+    } catch ( IOException e ) { }
 
+    if ( charType == 1 )
+	pat = new Warrior( name );
+    else if ( charType == 2 )
+	pat = new Mage( name );
+    else
+	pat = new Rogue( name );
+    
   }//end newGame()
 
 

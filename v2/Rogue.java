@@ -13,9 +13,4 @@ public class Rogue extends Protagonist {
         defense = baseDefense + 4;
         attack = baseAttack - 2;
     }
-
-    public void normalize() {
-        defense = baseDefense;
-        attack = baseAttack;
-    }
 }

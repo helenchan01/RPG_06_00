@@ -17,6 +17,11 @@ public class Protagonist extends Character {
 	    return name;
     }
 
+    public void normalize() {
+        defense = baseDefense;
+        attack = baseAttack;
+    }
+
     public String toString() {
 	    String stats = "name: " + name
 	                 + " hp: " + hp

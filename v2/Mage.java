@@ -14,9 +14,4 @@ public class Mage extends Protagonist {
 	    attack = baseAttack + 3.5;
     }
 
-    public void normalize() {
-        defense = baseDefense;
-        attack = baseAttack;
-    }
-
 }

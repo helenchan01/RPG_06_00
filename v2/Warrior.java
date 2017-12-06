@@ -13,9 +13,4 @@ public class Warrior extends Protagonist {
         defense = baseDefense + 3;
         attack = baseAttack + 4;
     }
-
-    public void normalize() {
-        defense = baseDefense;
-        attack = baseAttack;
-    }
 }
