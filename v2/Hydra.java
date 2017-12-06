@@ -1,10 +1,16 @@
 public class Hydra extends Monster {
 
-    baseDefense = 10;
-    baseAttack = 3.0;
+    private int baseDefense = 6;
+    private double baseAttack = 3.0;
     
     public Hydra() {
-	super();
+    	super();
+    	defense = this.baseDefense;
+    	attack = this.baseAttack;
     }
-    //
+    
+    public void specialize() {
+        defense = baseDefense + 2;
+        attack = baseAttack - 1;
+    }
 }
