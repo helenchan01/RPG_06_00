@@ -13,4 +13,9 @@ public class Cyclops extends Monster{
         defense = baseDefense + 3;
         attack = baseAttack + 1.2;
     }
+
+    public String toString() {
+        String desc = "a Cyclops with" + super.toString();
+        return desc;
+    }
 }

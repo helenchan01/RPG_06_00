@@ -10,4 +10,9 @@ public class Undead extends Monster {
     public void specialize() {
 
     }
+
+    public String toString() {
+        String desc = "an Undead with " + super.toString();
+        return desc;
+    }
 }

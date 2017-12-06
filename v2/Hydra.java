@@ -13,4 +13,9 @@ public class Hydra extends Monster {
         defense = baseDefense + 2;
         attack = baseAttack - 1;
     }
+
+    public String toString() {
+        String desc = "a Hydra with " + super.toString();
+        return desc;
+    }
 }

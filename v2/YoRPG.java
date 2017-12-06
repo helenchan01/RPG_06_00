@@ -106,7 +106,16 @@ public class YoRPG
     else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
 
-	    smaug = new Cyclops();
+            double monsterSelect = Math.random();
+            if( monsterSelect < (1.0/3.0) ) {
+                smaug = new Cyclops();
+            } else if( monsterSelect < (2.0/3.0) ) {
+                smaug = new Hydra();
+            } else {
+                smaug = new Undead();
+            }
+
+            System.out.println( "\nYou sight " + smaug + "!" );
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 

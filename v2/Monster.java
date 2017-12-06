@@ -11,7 +11,7 @@ public class Monster extends Character {
     }
 
     public String toString() {
-	    String stats = " hp: " + hp
+	    String stats = "hp: " + hp
 	                 + " strength: " + strength
 	                 + " defense: " + defense
 	                 + " attack: " + attack;
