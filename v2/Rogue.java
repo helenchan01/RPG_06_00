@@ -8,9 +8,4 @@ public class Rogue extends Protagonist {
     	defense = this.baseDefense;
     	attack = this.baseAttack;
     }
-
-    public void specialize() {
-        defense = baseDefense + 4;
-        attack = baseAttack - 2;
-    }
 }

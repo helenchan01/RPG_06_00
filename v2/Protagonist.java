@@ -7,7 +7,7 @@ public class Protagonist extends Character {
 
     public Protagonist( String name ) {
     	this.name = name;
-	    hp = 1000;
+	hp = 1000;
     	strength = 20;
     	defense = baseDefense;
     	attack = baseAttack;
@@ -17,6 +17,11 @@ public class Protagonist extends Character {
 	    return name;
     }
 
+    public void specialize() {
+        defense = baseDefense - 2;
+        attack = baseAttack + 4;
+    }
+    
     public void normalize() {
         defense = baseDefense;
         attack = baseAttack;

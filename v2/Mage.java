@@ -8,10 +8,4 @@ public class Mage extends Protagonist {
        	defense = this.baseDefense;
     	attack = this.baseAttack;
     }
-
-    public void specialize() {
-	    defense = baseDefense - 2 ;
-	    attack = baseAttack + 3.5;
-    }
-
 }
