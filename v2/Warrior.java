@@ -8,9 +8,4 @@ public class Warrior extends Protagonist {
         defense = this.baseDefense;
         attack = this.baseAttack;
     }
-
-    public void specialize() {
-        defense = baseDefense + 3;
-        attack = baseAttack + 4;
-    }
 }
