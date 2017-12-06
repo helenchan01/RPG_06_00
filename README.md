@@ -1,11 +1,11 @@
 # RPG_period06_team00
 _Characters_:
 * Rogue
-   * specialize increases defense but decreases attack
+  * High defense, lower attack
 * Mage
-  * specialize increases attack but decreases defense
+  * High attack, lower defense
 * Warrior
-  * specialize increases both attack and defense but the base defense and attack are low.
+  * Medium attack, medium defence
 
 _Monsters_:
 * Hydra

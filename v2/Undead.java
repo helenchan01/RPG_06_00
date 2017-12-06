@@ -8,7 +8,8 @@ public class Undead extends Monster {
     }
 
     public void specialize() {
-
+        defense = baseDefense - 3;
+        attack = baseAttack + 2;
     }
 
     public String toString() {
