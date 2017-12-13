@@ -1,4 +1,4 @@
-public class Protagonist extends Character {
+public abstract class Protagonist extends Character {
 
     private String name;
 
@@ -27,15 +27,13 @@ public class Protagonist extends Character {
         attack = baseAttack;
     }
 
-    public String toString() {
-	    String stats = "name: " + name
-	                 + " hp: " + hp
-	                 + " strength: " + strength
-	                 + " defense: " + defense
-	                 + " attack: " + attack;
-	    return stats;
-    }
-	
+    // Compiling an abstract toString without changing the class's header:
+    // Protagonist is not abstract and does not override abstract
+    // method toString() in Protagonist
+    // public class Protagonist extends Character {
+    //        ^   
+    
+    public abstract String toString();
 }
 
     
