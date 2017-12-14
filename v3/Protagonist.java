@@ -32,6 +32,9 @@ public abstract class Protagonist extends Character {
     // method toString() in Protagonist
     // public class Protagonist extends Character {
     //        ^   
+
+    // Instantiating a Protagonist:
+    // error: Protagonist is abstract; cannot be instantiated
     
     public abstract String toString();
 }
