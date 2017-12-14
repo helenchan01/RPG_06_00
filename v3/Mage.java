@@ -8,7 +8,17 @@ public class Mage extends Protagonist {
        	defense = this.baseDefense;
     	attack = this.baseAttack;
     }
+
+    public void specialize() {
+        defense = defense + 8;
+        attack = attack + 3.5;
+    }
     
+    public void normalize() {
+        defense = baseDefense;
+        attack = baseAttack;
+    }
+
     public String toString() {
         return "a mage";
     }

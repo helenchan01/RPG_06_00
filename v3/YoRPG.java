@@ -76,7 +76,7 @@ public class YoRPG
     
     try {
 	System.out.println( "\nChoose your character type:" );
-	System.out.println( "\t1: Warrior.\n\t2: Mage.\n\t3: Rogue." );
+	System.out.println( "\t1: Warrior.\n\t2: Mage.\n\t3: Rogue."); //\n\t4: Protagonist." );
 	charType = Integer.parseInt( in.readLine() );
     } catch ( IOException e ) { }
 
@@ -84,9 +84,19 @@ public class YoRPG
 	pat = new Warrior( name );
     else if ( charType == 2 )
 	pat = new Mage( name );
-    else
+    else if (charType == 3)
 	pat = new Rogue( name );
-    
+
+	/* Instantiating a Protagonist:
+	 *
+	 * error: Protagonist is abstract; cannot be instantiated
+	 * pat = new Protagonist( name);
+	 * 	     ^
+	 * 1 error
+	 *
+     * else
+	 * pat = new Protagonist( name);
+     */
   }//end newGame()
 
 

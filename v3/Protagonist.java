@@ -7,7 +7,7 @@ public abstract class Protagonist extends Character {
 
     public Protagonist( String name ) {
     	this.name = name;
-	hp = 1000;
+	    hp = 1000;
     	strength = 20;
     	defense = baseDefense;
     	attack = baseAttack;
@@ -17,15 +17,8 @@ public abstract class Protagonist extends Character {
 	    return name;
     }
 
-    public void specialize() {
-        defense = baseDefense - 2;
-        attack = baseAttack + 4;
-    }
-    
-    public void normalize() {
-        defense = baseDefense;
-        attack = baseAttack;
-    }
+    public abstract void specialize();    
+    public abstract void normalize();
 
     // Compiling an abstract toString without changing the class's header:
     // Protagonist is not abstract and does not override abstract

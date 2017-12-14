@@ -9,6 +9,16 @@ public class Rogue extends Protagonist {
     	attack = this.baseAttack;
     }
 
+    public void specialize() {
+        defense += 13;
+        attack += 4;
+    }
+
+    public void normalize() {
+        defense = baseDefense;
+        attack = baseAttack;
+    }
+
     public String toString() {
         return "a rogue";
     }

@@ -9,6 +9,16 @@ public class Warrior extends Protagonist {
         attack = this.baseAttack;
     }
 
+    public void specialize() {
+        defense += 5;
+        attack += 10;
+    }
+
+    public void normalize() {
+        defense = baseDefense;
+        attack = baseAttack;
+    }
+
     public String toString() {
         return "a warrior";
     }
