@@ -36,6 +36,9 @@ public abstract class Protagonist extends Character {
     // Instantiating a Protagonist:
     // error: Protagonist is abstract; cannot be instantiated
     
+    // Not overriding abstract methods:
+    // error: Rogue is not abstract and does not override abstract method toString()
+    
     public abstract String toString();
 }
 
