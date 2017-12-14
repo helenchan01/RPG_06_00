@@ -8,4 +8,9 @@ public class Rogue extends Protagonist {
     	defense = this.baseDefense;
     	attack = this.baseAttack;
     }
+
+    public String toString() {
+        return "a rogue";
+    }
+
 }

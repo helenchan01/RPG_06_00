@@ -8,4 +8,9 @@ public class Warrior extends Protagonist {
         defense = this.baseDefense;
         attack = this.baseAttack;
     }
+
+    public String toString() {
+        return "a warrior";
+    }
+
 }
